@@ -36,6 +36,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: auto;
 }
 
 header {
@@ -123,7 +124,6 @@ li a {
 }
 .overlay-div {
   text-align: center;
-  /* background: green; */
 }
 .overlay {
   display: flex;
@@ -158,38 +158,99 @@ li a {
   margin: 0 2rem;
   text-transform: uppercase;
 }
-.promo-text > svg{
+.promo-text > svg {
   background: #855a41;
 }
-.second-section{
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header header header"
+    ". . main  . . "
+    "footer footer footer footer footer";
+  width: 100%;
+  grid-auto-flow: row;
+  height: 1000px;
+  background: #f7f3ed;
+  padding: 0 8rem;
+}
+.item-a {
+  grid-area: header;
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+
+  grid-row: auto;
+}
+.item-b {
+  grid-area: main;
+  grid-column: 3;
+  /* background-color: red; */
+  text-align: center;
+}
+.item-b > a {
+  background: #855a41;
+  font-size: large;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border: 1px solid #855a41;
+}
+.item-c {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-a > img {
+  width: 400px;
+  height: 400px;
+}
+.item-c > img {
+  width: 400px;
+  height: 400px;
+}
+
+.item-b > p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+}
+
+.third-section {
   background: #f7f3ed;
   display: flex;
   width: 100%;
   /* background: green; */
 }
-.sec_div-img{
+.third_div-img {
   width: 50%;
   border: 1px solid #f7f3ed;
   outline: none;
   /* background: blue; */
 }
-.sec_div-img > img{
+.third_div-img > img {
   width: 100%;
 }
-.sec_div-text{
+.third_div-text {
   width: 50%;
   text-align: center;
   align-self: center;
 }
-.sec_div-text > h3{
+.third_div-text > h3 {
   font-size: xxx-large;
   color: #444342;
 }
-.sec_div-text > p{
+.third_div-text > p {
   font-size: x-large;
   font-weight: lighter;
 }
-.sec_div-text > button{
+.third_div-text > button {
   background: #855a41;
   font-size: large;
   color: #fff;
