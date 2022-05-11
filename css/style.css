@@ -204,6 +204,7 @@ li a {
   padding: 1rem 2.5rem;
   border: 1px solid #855a41;
   margin: 20px 0;
+  cursor: pointer;
 }
 .item-c {
   grid-area: footer;
@@ -268,6 +269,7 @@ li a {
   padding: 1rem 2.5rem;
   border: 1px solid #855a41;
   margin: 1rem;
+  cursor: pointer;
 }
 .fourth-section {
   width: auto;
@@ -420,6 +422,7 @@ footer {
   color: #fff;
   display: block;
   margin: 10px 0;
+  cursor:pointer;
 }
 .logo-header {
   display: flex;
